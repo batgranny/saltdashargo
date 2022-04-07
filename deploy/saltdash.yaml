@@ -18,5 +18,5 @@ spec:
       - image: batgranny/saltdash
         name: saltdash
         ports:
-        - containerPort: 80
+        - containerPort: 90
         - containerPort: 3306

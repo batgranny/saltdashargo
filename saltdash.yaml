@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: load-balancer-example
+  name: hello-world
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: load-balancer-example
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: load-balancer-example
+    spec:
+      containers:
+      - image: batgranny/saltdash
+        name: saltdash
+        ports:
+        - containerPort: 80
+        - containerPort: 3306

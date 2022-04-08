@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: load-balancer-example
   name: saltdash
 spec:
-  replicas: 2
+  replicas: 7
   selector:
     matchLabels:
       app.kubernetes.io/name: load-balancer-example

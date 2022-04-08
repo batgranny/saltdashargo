@@ -22,15 +22,15 @@ spec:
         - containerPort: 80
         - containerPort: 3306
         
-#---
+---
 
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: saltdashsvc
-#spec:
-#  type: LoadBalancer
-#  ports:
-#  - port: 80
-#  selector:
+apiVersion: v1
+kind: Service
+metadata:
+  name: saltdashsvc
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
 #    app: saltdash

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: saltdash
+  name: saltdashapp
   labels:
     app.kubernetes.io/name: load-balancer-example
     app: saltdash

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app.kubernetes.io/name: load-balancer-example
-  name: chris-world
+  name: saltdash
 spec:
   replicas: 5
   selector:

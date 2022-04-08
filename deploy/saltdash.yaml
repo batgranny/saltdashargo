@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: load-balancer-example
   name: saltdash
 spec:
-  replicas: 7
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: load-balancer-example
@@ -21,15 +21,15 @@ spec:
         - containerPort: 80
         - containerPort: 3306
         
-#---
+---
 
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: saltdashsvc
-#spec:
-#  type: LoadBalancer
-#  ports:
-#  - port: 80
-#  selector:
-#    app: saltdash
+apiVersion: v1
+kind: Service
+metadata:
+  name: saltdashsvc
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: saltdash

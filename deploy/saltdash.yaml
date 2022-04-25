@@ -31,7 +31,6 @@ kind: Service
 metadata:
   name: saltdash
 spec:
-  loadBalancerIP: 20.221.14.117
   type: LoadBalancer
   ports:
   - port: 80
